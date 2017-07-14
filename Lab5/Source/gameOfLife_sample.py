@@ -17,9 +17,11 @@ def iterate(Z):
     N = compute_neigbours(Z)
     for x in range(1,Z.shape[0]-1):
         for y in range(1,Z.shape[1]-1):
-             if Z[x][y] == 1 and (N[x][y] < 2 or N[x][y] > 3):
+             if Z[x][y] == 1 and (N[x][y] < 2 or N[x][y] > 3): #death
                  Z[x][y] = 0
-             elif Z[x][y] == 0 and N[x][y] == 3:
+             elif Z[x][y] == 1 and (N[x][y] == 2 or N[x][y] == 3):  # survive
+                     Z[x][y] = 1
+             elif Z[x][y] == 0 and N[x][y] == 3: #birth
                  Z[x][y] = 1
     return Z
 
