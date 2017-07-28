@@ -1,0 +1,23 @@
+Machine learning is programming computers to optimize a performance
+criterion using example data or past experience. We need learning in
+cases where we cannot directly write a computer program to solve a given
+problem, but need example data or experience. One case where learning
+is necessary is when human expertise does not exist, or when humans
+are unable to explain their expertise. Consider the recognition of spoken
+speech—that is, converting the acoustic speech signal to an ASCII text;
+we can do this task seemingly without any difficulty, but we are unable
+to explain how we do it. Different people utter the same word differently
+due to differences in age, gender, or accent. In machine learning, the approach
+is to collect a large collection of sample utterances from different
+people and learn to map these to words.
+Another case is when the problem to be solved changes in time, or
+depends on the particular environment. We would like to have generalpurpose
+systems that can adapt to their circumstances, rather than explicitly
+writing a different program for each special circumstance. Consider
+routing packets over a computer network. The path maximizing
+the quality of service from a source to destination changes continuously
+as the network traffic changes. A learning routing program is able to
+adapt to the best path by monitoring the network traffic. Another example
+is an intelligent user interface that can adapt to the biometrics of
+its user—namely, his or her accent, handwriting, working habits, and so
+forth.
